@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "mydiv">
+        <input type="text" id="yourtext" placeholder="input sometext">
+        <input type="number" id="price" placeholder="input price">
+        <input type="button" id="addbtn" onclick="addtolist()" value="add">
+    </div>
+    <div id="listdiv">
+        <script>
+            function addtolist(){
+                var name = document.getElementById("yourtext").value;
+                var listdiv = document.getElementById("listdiv");
+                var price = document.getElementById("price").value;
+                listdiv.innerHTML += name + " - " + price + "<br>";
+            }
+        </script>
+    </div>
+</body>
+</html>
